@@ -43,7 +43,17 @@ execute if block 23 9 25 lever[powered=true] if entity @e[tag=RestartOFF] run su
 execute if block 23 9 25 lever[powered=true] if entity @e[tag=RestartOFF] run kill @e[tag=RestartOFF]
 
 # ----- OBJECT CUSTOM -----
-execute if entity @p[nbt={Inventory:[{id:"minecraft:apple",Slot:-106b}]}]
+effect give @p[nbt={Inventory:[{id:"minecraft:dune_armor_trim_smithing_template",Slot:-106b}]}] minecraft:speed 1 1
+
+effect give @p[nbt={Inventory:[{id:"minecraft:silence_armor_trim_smithing_template",Slot:-106b}]}] minecraft:strength 1 1
+effect give @p[nbt={Inventory:[{id:"minecraft:silence_armor_trim_smithing_template",Slot:-106b}]}] minecraft:poison 1 1
+
+effect give @p[nbt={Inventory:[{id:"minecraft:sentry_armor_trim_smithing_template",Slot:-106b}]}] minecraft:slow_falling 1 1
+
+effect give @p[nbt={Inventory:[{id:"minecraft:wild_armor_trim_smithing_template",Slot:-106b}]}] minecraft:jump_boost 1 3
+
+effect give @p[nbt={Inventory:[{id:"minecraft:spire_armor_trim_smithing_template",Slot:-106b}]}] minecraft:weakness 1 1
+effect give @p[nbt={Inventory:[{id:"minecraft:spire_armor_trim_smithing_template",Slot:-106b}]}] minecraft:regeneration 1 1
 
 
 # ----- OBJECT CUSTOM -----
