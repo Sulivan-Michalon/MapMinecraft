@@ -42,6 +42,15 @@ execute if block 23 9 25 lever[powered=false] if entity @e[tag=RestartON] run ki
 execute if block 23 9 25 lever[powered=true] if entity @e[tag=RestartOFF] run summon minecraft:armor_stand 23 8.10 25 {Invisible:true,NoGravity:true,Small:true,CustomNameVisible:true,CustomName:'{"text":"ON","color":"green","bold":true}',Tags:["RestartON"]}
 execute if block 23 9 25 lever[powered=true] if entity @e[tag=RestartOFF] run kill @e[tag=RestartOFF]
 
+# ----- OBJECT CUSTOM -----
+execute if entity @p[nbt={Inventory:[{id:"minecraft:apple",Slot:-106b}]}]
+
+
+# ----- OBJECT CUSTOM -----
+execute as @a at @s if block ~ ~-1 ~ magenta_glazed_terracotta run effect give @s speed 1 1 true
+execute as @a at @s if block ~ ~-1 ~ lime_glazed_terracotta run effect give @s jump_boost 1 5 true
+
+
 # -- skin--
 
 # particules
