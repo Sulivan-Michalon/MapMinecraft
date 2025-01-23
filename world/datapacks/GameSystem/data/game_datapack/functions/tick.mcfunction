@@ -42,6 +42,10 @@ execute if block 23 9 25 lever[powered=false] if entity @e[tag=RestartON] run ki
 execute if block 23 9 25 lever[powered=true] if entity @e[tag=RestartOFF] run summon minecraft:armor_stand 23 8.10 25 {Invisible:true,NoGravity:true,Small:true,CustomNameVisible:true,CustomName:'{"text":"ON","color":"green","bold":true}',Tags:["RestartON"]}
 execute if block 23 9 25 lever[powered=true] if entity @e[tag=RestartOFF] run kill @e[tag=RestartOFF]
 
+# -- skin--
+
+# particules
+execute if score @p particules matches 3 run execute at @a unless block ~ ~-1 ~ air run particle soul_fire_flame ~ ~.125 ~ .15 0 .15 0.01 1
 
 
 
