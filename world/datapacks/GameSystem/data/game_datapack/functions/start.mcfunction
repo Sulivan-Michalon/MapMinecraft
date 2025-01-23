@@ -10,7 +10,7 @@ gamerule doFireTick false
 gamerule doImmediateRespawn true
 gamerule doInsomnia false
 gamerule doWeatherCycle false
-effect give @a night_vision infinite 1
+effect give @a night_vision infinite 1 false
 setworldspawn 25 8 18
 spawnpoint @a 25 8 18
 
